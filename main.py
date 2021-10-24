@@ -1,23 +1,11 @@
-# This is a sample Python script.
+import datetime
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-def my_function():
-
-    name = input("Tell me your name:")
-
-    print(f'Hello {name}')
+def feature1():
+    print("feature1")
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
 
+now = datetime.datetime.now()
+print("Current date and time : ")
+print(now.strftime("%Y-%m-%d %H:%M:%S"))
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-   # print_hi('PyCharm')
-    my_function()
-   
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
