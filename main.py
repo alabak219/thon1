@@ -67,6 +67,14 @@ for i, word in enumerate(words):
     print("Pig Latin: ",pig_latin)
 
 
+string = input('Enter word list:\n')
+txt = string.split()
+
+for word in txt:
+    if len(word) < 10:
+        print('{0}'.format(word))
+    else:
+        continue
 
 
 
