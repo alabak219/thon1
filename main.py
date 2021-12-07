@@ -1,18 +1,33 @@
-import sys
+import random
 
-n = len(sys.argv)
-print("Total arguments passed:", n)
+num = 0;
+g = 0;
+while (g != 2):
 
-print("\nName of Python script:", sys.argv[0])
+    print("Guess heads by entering 1 or tails by entering 2 for this coin flip.");
+    answer = input()
+    if (answer == 1):
+        print("You guessed heads.")
+    else:
+        print("you guessed tails.")
+    flip = random.choice([1, 2])
+    if (flip == 1):
+        print("The coin landed on Heads.")
+    else:
+        print("The coin landed on Tails.")
+    if (answer == flip):
+        print("Congrats you guessed right.")
+    else:
+        print("Sorry your guess was wrong.")
+    num += 1
 
-print("\nArguments passed:", end = " ")
-for i in range(1, n):
-    print(sys.argv[i], end = " ")
+    print("You have guessed " + str(num) + " times.")
 
-Sum = 0
+    print("Would you would like to guess again enter 1 or enter 2 to exit?")
+    g = input()
+    if (g == 2):
+        break
+    else:
+        continue
 
-for i in range(1, n):
-    Sum += int(sys.argv[i])
-
-print("\n\nResult:", Sum)
 
