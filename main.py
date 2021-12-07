@@ -1,26 +1,21 @@
-import re
+class Bird():
+    pass
 
-txt = "The rain in Spain"
-x = re.search("^The.*Spain$", txt)
+def __init__(self, name, feather_color, beak_size, beak_color):
+    self.name = name
+    self.feather_color = feather_color
+    self.beak_size = beak_size
+    self.beak_color = beak_color
 
-if x:
-    print("YES! We have a match!")
-else:
-    print("No match")
+def fly(self):
+    print("Flying")
+
+def walk(self):
+    print("Waling")
 
 
-import os
 
-def current_path():
-    print("Current working directory before")
-    print(os.getcwd())
-    print ()
 
-current_path()
-
-os.chdir('../.')
-
-current_path()
 
 
 
